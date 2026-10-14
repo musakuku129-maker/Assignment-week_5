@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpendWise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <h1>SpendWise</h1>
+        <p>Track your monthly budget with confidence</p>
+      </header>
+
+      <main class="container">
+        <section class="panel summary-panel">
+          <h2>Budget Summary</h2>
+          <div class="summary-row">
+            <span>Monthly Budget</span>
+            <strong id="budgetValue">$0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Expenses</span>
+            <strong id="expensesValue">$0.00</strong>
+          </div>
+          <div class="summary-row highlight">
+            <span>Remaining</span>
+            <strong id="remainingValue">$0.00</strong>
+          </div>
+        </section>
+
+        <section class="panel controls-panel">
+          <h2>Plan Your Budget</h2>
+          <button id="startBudgetBtn" type="button">Start Budget Check</button>
+          <div id="expenseList" class="expense-list" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
